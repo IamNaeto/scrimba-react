@@ -1,0 +1,16 @@
+.footer{
+    border-radius: 0 0 0.5rem 0.5rem;
+    background: #D5D4D8;
+    padding: 10px 5%;
+}
+
+.footer a .fa{
+    font-size: 25px;
+    color: #918E9B;
+    margin: 0 8px;
+    transition: 0.5s ease-in;
+}
+
+.footer a .fa:hover{
+    color: #297FE5;
+}

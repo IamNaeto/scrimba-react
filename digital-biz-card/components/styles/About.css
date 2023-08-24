@@ -1,0 +1,103 @@
+.about-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.about-img{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 250px;
+}
+
+.about-img .hero-img{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 250px;
+}
+.about-box{
+    padding: 5%;
+}
+.hero-name{
+    font-size: 25px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5px;
+    color: #2B283A;
+}
+
+.skill{
+    color: #F47D27;
+    text-align: center;
+    font-size: 12.8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 3px 0;
+}
+
+.site{
+    color: #4A4E74;
+    text-align: center;
+    font-size: 10.24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.site:hover{
+    color: #008000;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.btns a .fa{
+    margin-right: 5px;
+}
+
+.mail, .linkedin{
+    padding: 0.7rem;
+    width: 100px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 6px;
+    transition: 0.5s ease;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.mail{
+    border: 1px solid #D1D5DB;
+    background: #FFF;
+    color: #374151;
+}
+
+.mail:hover{
+    color: #297FE5;
+    border-color: #297FE5;
+}
+
+.linkedin{
+    color: #FFF;
+    background: #297FE5;
+}
+
+.linkedin:hover{
+    color: #374151;
+}
