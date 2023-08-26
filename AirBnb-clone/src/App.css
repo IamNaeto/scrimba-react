@@ -28,7 +28,8 @@ section {
 }
 
 .hero--photo {
-  max-width: 400px;
+  max-width: 55%;
+  min-width: 400px;
   align-self: center;
 }
 
@@ -38,4 +39,71 @@ section {
 
 .hero--text {
   margin-top: 0;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  width: 20%;
+  flex-basis: 300px;
+  flex-grow: 1;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    flex-basis: 200px;
+  }
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+.card--title, .card--description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--description{
+  margin: 0;
+  text-align: justify;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 14px;
+}
+
+.card--price {
+  margin-top: 10px;
+}
+
+.card--price .bold{
+  font-weight: bold;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+  border-radius: 0.3rem;
 }
