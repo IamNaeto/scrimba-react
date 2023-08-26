@@ -11,13 +11,7 @@ function App() {
       <Card
           openSpots={datas.openSpots} 
           key={datas.id}
-          img={datas.coverImg}
-          rating={datas.stats.rating}
-          reviewCount={datas.stats.reviewCount}
-          location={datas.location}
-          title={datas.title}
-          description={datas.description}
-          price={datas.price}
+          item={datas}
   />
     )
   })
