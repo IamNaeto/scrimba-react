@@ -11,7 +11,7 @@ function App() {
       <Card
           openSpots={datas.openSpots} 
           key={datas.id}
-          item={datas}
+          {...datas}
   />
     )
   })
