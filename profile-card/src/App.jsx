@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Star from '../components/Star'
 
 function App() {
   const [contact, setContact] = useState({
@@ -26,11 +27,7 @@ return (
         <article className="card">
             <img src="/src/assets/Charlie.png" className="card--image" alt='img'/>
             <div className="card--info">
-                <img 
-                    src={`/src/assets/${starIcon}`} 
-                    className="card--favorite"
-                    onClick={toggleFavorite}
-                />
+                <Star icon={starIcon} handleToggle={toggleFavorite}/>
                 <h2 className="card--name">
                     {contact.firstName} {contact.lastName}
                 </h2>
