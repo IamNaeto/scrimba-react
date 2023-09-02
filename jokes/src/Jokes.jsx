@@ -17,7 +17,7 @@ const Jokes = (props) => {
         <div className="jokes-box">
             {props.Setup && <h3 className="setup">{props.Setup}</h3>}
             {isShown && <p className="punchline">{props.Punchline}</p>}
-            <button onClick={toggleShown}>Show Punchline</button>
+            <button onClick={toggleShown}>{isShown ? "Hide" : "Show"} Punchline</button>
         </div>
      );
 }
