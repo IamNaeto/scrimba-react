@@ -3,8 +3,6 @@ import { useState } from "react";
 import memeData from "../src/memeData"
 
 const Meme = () => {
-    // const [memeImage, setMemeImage] = useState("https://i.imgflip.com/30b1gx.jpg")
-
     const [meme, setMeme] = useState({
         topText: "",
         bottomText: "",
@@ -25,6 +23,16 @@ const Meme = () => {
         })
     }
 
+    function handleChange(event) {
+        const {name, value} = event.target
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            [name]: value
+        }))
+    }
+
+    console.log(meme.name)
+
     return ( 
         <main>
             <div className="form">
@@ -32,11 +40,17 @@ const Meme = () => {
                     type="text"
                     placeholder="Top text"
                     className="form--input"
+                    name="topText"
+                    value={meme.topText}
+                    onChange={handleChange}
                 />
                 <input 
                     type="text"
                     placeholder="Bottom text"
                     className="form--input"
+                    name="bottomText"
+                    value={meme.bottomText}
+                    onChange={handleChange}
                 />
                 <button 
                     className="form--button"
@@ -45,7 +59,11 @@ const Meme = () => {
                     Get a new meme image 🖼
                 </button>
             </div>
-            <img src={meme.randomImage} className="meme--image" />
+            <div className="meme">
+                <img src={meme.randomImage} className="meme--image" />
+                <h2 className="meme--text top">{meme.topText}</h2>
+                <h2 className="meme--text bottom">{meme.bottomText}</h2>
+            </div>
         </main>
      );
 }
